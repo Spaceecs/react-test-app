@@ -24,7 +24,9 @@ export default function EditUser() {
             loadUsersFromFile();
         }
 
-        axios.get("data/Departments.json").then((res) => {
+        axios
+            .get("data/Departments.json")
+            .then((res) => {
             const departmentsWithIds = res.data.map((d) => ({
                 ...d,
                 id: uuidv4(),
@@ -32,7 +34,9 @@ export default function EditUser() {
             setDepartments(departmentsWithIds);
         });
 
-        axios.get("data/Statuses.json").then((res) => {
+        axios
+            .get("data/Statuses.json")
+            .then((res) => {
             const statusesWithIds = res.data.map((s) => ({
                 ...s,
                 id: uuidv4(),
@@ -40,7 +44,9 @@ export default function EditUser() {
             setStatuses(statusesWithIds);
         });
 
-        axios.get("data/Countries.json").then((res) => {
+        axios
+            .get("data/Countries.json")
+            .then((res) => {
             const countriesWithIds = res.data.map((c) => ({
                 ...c,
                 id: uuidv4(),

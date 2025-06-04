@@ -14,3 +14,195 @@ h1 {
 .filter-main-container {
     padding: 30px 20px;
 }
+
+.filter-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.select-container {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.select-container label {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Karla", serif;
+}
+
+.select-container select,
+.select-container input {
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.select-container select:focus,
+.select-container input:focus {
+    outline: none;
+    border-color: black;
+}
+
+.users-container{
+    display: flex;
+    flex-direction: column;
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Karla", sans-serif;
+    font-size: 14px;
+    color: #2a2a2a;
+    margin-top: 20px;
+}
+
+.users-table th,
+.users-table td {
+    padding: 30px 30px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.users-table th {
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 13px;
+    background-color: #fafafa;
+    text-transform: capitalize;
+}
+
+.users-table td {
+    color: #4a4a4a;
+}
+
+.users-table tr:last-child td {
+    border-bottom: none;
+}
+
+.users-table tr:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.users-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: white;
+    padding: 30px 50px;
+    border: 1px solid black;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    font-family: "Karla", serif;
+}
+
+.popup-content h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popup-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.popup-field label {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Karla", serif;
+}
+
+.popup-field input,
+.popup-field select {
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.popup-field input:focus,
+.popup-field select:focus {
+    outline: none;
+    border-color: black;
+}
+
+.popup-buttons {
+    padding: 20px;
+    justify-content: right;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.popup-buttons button {
+    border: solid 1px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.popup-buttons button:hover {
+    background-color: #333;
+}
+
+.buttons-container {
+    padding: 20px;
+    justify-content: right;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    border: solid 1px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
