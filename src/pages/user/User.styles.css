@@ -1,0 +1,16 @@
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-family: "Karla", serif;
+}
+
+.main-container {
+    margin: 60px 80px 80px 80px;
+    border: black 1px solid;
+}
+
+.filter-main-container {
+    padding: 30px 20px;
+}
